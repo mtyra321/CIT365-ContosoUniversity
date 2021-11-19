@@ -47,7 +47,7 @@
                 <td>
                     @foreach (var course in item.CourseAssignments)
                     {
-                        @course.Course.CourseID @course.Course.Title <br />
+                    <p>@course.Course.CourseID @course.Course.Title</p><br />
                     }
                 </td>
                 <td>
@@ -83,7 +83,7 @@
                     @Html.ActionLink("Select", "Index", new { courseID = item.CourseID })
                 </td>
                 <td>
-                    @item.CourseID
+                    @item.CourseID 
                 </td>
                 <td>
                     @item.Title
